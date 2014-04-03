@@ -18,7 +18,7 @@ p /*This controls all body text*/
 {  /*If the first font name is not available, CSS will proceed through names until one works */  
   font-family: Gotham, Sans-Serif;
   font-size: 11px;
-  color:#FFFFFF;
+  color:#000000;
   letter-spacing: 1.5px; 
 
 }
