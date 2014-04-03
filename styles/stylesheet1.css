@@ -1,0 +1,33 @@
+body {
+    
+    background-color:#FFFFEB;
+text-align:center
+
+}
+
+h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
+{ 
+    font-family: Duke, Mensch, Sans-Serif;
+    color:#F76700;
+    font-size: 50px;
+    text-transform:uppercase;
+
+}
+
+p /*This controls all body text*/
+{  /*If the first font name is not available, CSS will proceed through names until one works */  
+  font-family: Gotham, Sans-Serif;
+  font-size: 11px;
+  color:#FFFFFF;
+  letter-spacing: 1.5px; 
+
+}
+
+a /*This controls all links (anchors)*/
+{
+  font-family: Gotham, Helvetica, Sans-Serif;
+  font-size: 11px;
+  color: #A8654F;
+  text-transform:uppercase;
+    
+}
