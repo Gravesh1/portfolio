@@ -1,10 +1,21 @@
+
+html{
+
+    margin:0px;
+
+}
+
 body {
     
-      background-image:url("https://lh3.googleusercontent.com/vj3C287fYgpSakMbYgzHqeLvfDM4V29VctykeENYLYmPjvkx6yri4N02IRioXJJe4w=s190");
+    background-image:url("https://lh3.googleusercontent.com/vj3C287fYgpSakMbYgzHqeLvfDM4V29VctykeENYLYmPjvkx6yri4N02IRioXJJe4w=s190");
 background-repeat:repeat-y repeat-x;
-
 text-align:center
+        margin:0px;
+}
 
+.headerimage {
+z-index:-1
+       
 }
 
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
@@ -13,14 +24,14 @@ h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
     color:#aed2a2;
     font-size: 50px;
     text-transform:uppercase;
-
+   
 }
 
 p /*This controls all body text*/
 {  /*If the first font name is not available, CSS will proceed through names until one works */  
   font-family: Gotham, Sans-Serif;
   font-size: 11px;
-  color:#FFFFFF;
+  color:#000000;
   letter-spacing: 1.5px; 
 
 }
@@ -28,8 +39,10 @@ p /*This controls all body text*/
 a /*This controls all links (anchors)*/
 {
   font-family: Gotham, Helvetica, Sans-Serif;
-  font-size: 11px;
-  color: #FAE8AD;
+   font-size: 14px;
+  color: #000;
   text-transform:uppercase;
+    z-index:1000
+ 
     
 }
