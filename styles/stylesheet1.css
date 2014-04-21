@@ -13,8 +13,9 @@ text-align:center
 }
 
 .headerimage {
+margin:-50px;
 z-index:-1
-       
+
 }
 
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
