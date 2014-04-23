@@ -4,6 +4,13 @@ html{
 
 }
 
+.headersquare {
+margin:-45px;
+z-index:-1000;
+max-height:250px;
+max-width:auto;
+}
+
 body {
     
     background-image:url("https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/whitebg.png");
@@ -13,10 +20,12 @@ text-align:center
 }
 
 .headerimage {
-margin:-45px;
+margin:-224px;
 z-index:-1
 
 }
+
+
 
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
 { 
