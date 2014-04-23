@@ -134,20 +134,57 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
     
   
 
-    <h1> Home </h1>
+  <!--  <h1> Home </h1>
 <p> This is the beginning of the first paragraph </p>
+-->
 
 
-
+    <div id="slideshow">
+   <div>
+     <img src="http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+   </div>
+   <div>
+     <img src="http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+</div>
     
 </div>
 
-    
+
+        
+        
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  ALWAYS LOAD jQUERY AT THE BOTTOM OF THE PAGE (at the bottom of the code!)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
    <!-- Latest compiled and minified JavaScript (Also found somewhere on Bootstraps website)-->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
+       
+        
+    <!--This is for your slideshow!-->    <script type="text/javascript">
+            $("#slideshow > div:gt(0)").hide();
+            
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+            </script>
+        
 </body>
 
 </html>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
