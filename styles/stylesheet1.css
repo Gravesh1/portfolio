@@ -1,16 +1,16 @@
 html{
-
+ 
     margin:0px;
-
+ 
 }
-
+ 
 .headersquare {
 margin:-45px;
 z-index:-1000;
 max-height:250px;
 max-width:auto;
 }
-
+ 
 body {
     
     background-image:url("https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/whitebg.png");
@@ -18,15 +18,15 @@ background-repeat:repeat-y repeat-x;
 text-align:center
         margin:0px;
 }
-
+ 
 .headerimage {
 margin:-224px;
 z-index:-1
-
+ 
 }
-
-
-
+ 
+ 
+ 
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
 { 
     font-family: Duke, Mensch, Sans-Serif;
@@ -35,16 +35,16 @@ h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
     text-transform:uppercase;
    
 }
-
+ 
 p /*This controls all body text*/
 {  /*If the first font name is not available, CSS will proceed through names until one works */  
   font-family: Gotham, Sans-Serif;
   font-size: 11px;
   color:#000000;
   letter-spacing: 1.5px; 
-
+ 
 }
-
+ 
 a /*This controls all links (anchors)*/
 {
   font-family: Gotham, Helvetica, Sans-Serif;
@@ -53,8 +53,8 @@ a /*This controls all links (anchors)*/
   text-transform:uppercase;
     z-index:1000
 }
-
-
+ 
+ 
 #slideshow { 
     margin: 50px auto; 
     top: 270px;
@@ -64,11 +64,15 @@ a /*This controls all links (anchors)*/
     padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
-
+ 
 #slideshow > div { 
     position: absolute; 
     top: 10px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
+}
+ 
+.headersquare {
+    background-image: url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/headersquare.png);
 }
