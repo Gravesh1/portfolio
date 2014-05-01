@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/close.png) url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/loading.gif) url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/prev.png) url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/next.png);
   display: none;
 }
 
