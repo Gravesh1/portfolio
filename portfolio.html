@@ -20,6 +20,10 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
 
 <!-- Latest compiled and minified CSS ( This is found somewhere on Bootstraps website)-->
 <link rel="stylesheet" href="./styles/stylesheet1.css">
+
+<link rel="stylesheet" href="styles/screen.css">
+<link rel="stylesheet" href="styles/lightbox.css">
+
 <style> 
   
 </style> <!-- Any additional styles go here. ALSO, FOR CODE BELOW: Only lower levels of IE will recognize this!-->
@@ -139,7 +143,7 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
 -->
  
  
-    <div id="slideshow">
+   <!-- <div id="slideshow">
    <div>
      <img src="https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/slide1.png">
    </div>
@@ -157,13 +161,31 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
    </div>
 </div>
     
-</div>
+</div> -->
+
+<h1 style="clear: both;">Four image set</h1>
+			
+<!-- JUST CHANGE URLS TO GOOGLE DRIVE ONES -->
+
+
+			<div class="image-row">
+				<div class="image-set">
+					<a class="example-image-link" href="img/demopage/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="img/demopage/thumb-3.jpg" alt=""/></a>
+					<a class="example-image-link" href="img/demopage/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="img/demopage/thumb-4.jpg" alt="" /></a>
+					<a class="example-image-link" href="img/demopage/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="img/demopage/thumb-5.jpg" alt="" /></a>
+					<a class="example-image-link" href="img/demopage/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="img/demopage/thumb-6.jpg" alt="" /></a>
+				</div>
+			</div>
 
 
         
         
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  ALWAYS LOAD jQUERY AT THE BOTTOM OF THE PAGE (at the bottom of the code!)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <!-- THIS IS FOR THE IMAGE GALLERY -->
+    <script src="js/lightbox.min.js"></script> 
+    
    <!-- Latest compiled and minified JavaScript (Also found somewhere on Bootstraps website)-->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
        
