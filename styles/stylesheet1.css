@@ -14,18 +14,16 @@ max-width:auto;
 body {
     
     background-image:url("https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/whitebg.png");
-background-repeat:repeat-y repeat-x;
-text-align:center
-        margin:0px;
+	background-repeat:repeat-y repeat-x;
+	text-align:center;
+    margin:0px;
 }
  
 .headerimage {
-margin:-224px;
-z-index:-1
- 
+	margin:-224px;
+	z-index:-1
 }
- 
- 
+  
  
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
 { 
@@ -54,7 +52,7 @@ a /*This controls all links (anchors)*/
     z-index:1000
 }
  
- 
+
 #slideshow { 
     margin: 50px auto; 
     top: 270px;
@@ -64,15 +62,16 @@ a /*This controls all links (anchors)*/
     padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
- 
+
+
 #slideshow > div { 
-    position: absolute; 
+    position: absolute;
     top: 10px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
 }
- 
+
 .headersquare {
     background-image: url(https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/headersquare.png);
 }
