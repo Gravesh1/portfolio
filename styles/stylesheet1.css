@@ -11,6 +11,16 @@ max-height:250px;
 max-width:auto;
 }
  
+ 
+ .image-set {
+ padding: 20px;  
+}
+
+.example-image {
+    margin: 5px;
+}
+ 
+ 
 body {
     
     background-image:url("https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/whitebg.png");
