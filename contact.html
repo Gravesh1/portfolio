@@ -17,6 +17,12 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
 
     <title> Contact</title>
 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Feedback form for My Site">
+<meta name="author" content="gravesh1@tcnj.edu">
+
+
+        
 
 <!-- Latest compiled and minified CSS ( This is found somewhere on Bootstraps website)-->
 <link rel="stylesheet" href="./styles/stylesheet1.css">
@@ -137,12 +143,53 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
   <!--  <h1> Home </h1>
 <p> This is the beginning of the first paragraph </p>
 -->
+    
+    
+    
+    
+    <div class="container">
+	<div class="row">
+		<header class="col-md-12">
+			<h1>Feedback Form</h1>
+		</header>
+	</div>
+	
+	<div class="row">
+		<article class="col-md-12">
+			<p class="message"></p>
+			<form action="http://www.tcnj.edu/~gravesh1/jsonpform2email.php"> 
+				<div class="form-group">
+					<label>From</label>
+					<input class="form-control" type="text" name="from"  placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label>Subject</label>
+					<input class="form-control" type="text" name="subject"  placeholder="Enter Subject">
+				</div>
+				<div class="form-group">
+					<label>Message</label>
+					<textarea class="form-control" name="message"></textarea>
+				</div>
+				<input type="submit" class="btn btn-default" name="submit" value="Submit Feedback">
+			</form>
+
+		</article>
+	</div>
+	
+	<div class="row">
+		<footer></footer>
+	</div>
+</div>
+    
+    
+    
+    
  
- <div class="p" style="font-family:Gotham,Helvetica, Sans-Serif; position: relative; left: 250px;top: 330px;"><font size="5"><font color="#000000">Interested? Contact me!</font>
+ <!-- <div class="p" style="font-family:Gotham,Helvetica, Sans-Serif; position: relative; top: 330px;"><font size="5"><font color="#000000">Interested? Contact me!</font> -->
     
      
         <!-- This is for the Contact form! -->
-        
+ <!--       
 <div id="sa_contactdiv">
 <form name=sa_htmlform style="position: relative;  top: 30px; font-family: Gotham, Helvetica, Sans-Serif; font-size:12px;" onsubmit="return sa_contactform()">
 <table>
@@ -153,14 +200,54 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
 <tr><td><input type="submit" value="Send Message" style="font-weight:bold"></td></tr>
 </table>
 </form></div>
-        
+        -->
        
+    
+    
         
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  ALWAYS LOAD jQUERY AT THE BOTTOM OF THE PAGE (at the bottom of the code!)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
    <!-- Latest compiled and minified JavaScript (Also found somewhere on Bootstraps website)-->
 <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
        
+            
+            
+            
+            
+            
+            
+            
+            <script>
+
+/* jsonp form to email function */
+$('form').submit(function() {
+  var url = $(this).attr("action");
+  var params = $(this).serialize();
+  
+  $.getJSON(url + '?' + params + "&callback=?", function(data) {
+   
+	switch(data[0].status){
+		case 'success':
+			$('.message').addClass("text-success").html('Thank you, <strong>' + data[0].from + '</strong>, for sending us feedback!');
+			$('form')[0].reset();
+			break;
+		case 'invalid email':
+			$('.message').removeClass("text-success").addClass("text-danger").html('Please provide a valid email address!');
+			break;
+		case 'failed to send':
+			$('.message').removeClass("text-success").addClass("text-danger").html('Failed to send email.');
+			break;
+	}
+  });
+  return false;
+});
+
+</script>
+            
+            
+            
+            
+            
         
     <!--This is for your slideshow!-->    <script type="text/javascript">
             $("#slideshow > div:gt(0)").hide();
