@@ -66,7 +66,11 @@ to your own. Has linked in jQuery, and bootstrap Javascript. -->
        		 		<a href="http://gravesh1.github.io/portfolio/index.html">
         				<div style="width: 45px; height: 30px; position: relative;  top: 50px; right: 170px; border: 0px;">
         					
-                    	<img src="https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/homebutton.png"  height="30px" style="position:relative; top:0;  z-index:2000; border:0px;"/>      
+                    	<img src="https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/homebutton.png" class="3" height="30px" style="position:relative; top:0;  z-index:2000; border:0px;"/>  
+                            
+                            <img src="https://googledrive.com/host/0BycVMAgih7rERWJXUEVKdFEySHM/homebutton2.png" class="4"  height="30px" style="position:absolute; top:0;  z-index:-2000; border:0px;"/>  
+                            
+                            
 						</div>
             		</a>
       			</td>
@@ -182,6 +186,31 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  3000);
             </script>
+       
+       
+       <!--THis is for hover effects on the four links!! -->
+       
+       
+       
+       <!--HOME TAB -->
+       <script type="text/javascript">
+
+
+  $(document).ready(function(){
+    $("img.3").hover(function() {
+      $(this).stop().animate({opacity: "0"}, 'fast' );
+    },
+    function() {
+      $(this).stop().animate({opacity: "1"}, 'fast');
+    });
+  });
+</script>
+
+       
+       
+       
+       
+       
         
 </body>
 
