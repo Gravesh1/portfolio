@@ -34,14 +34,25 @@ body {
 	z-index:-1
 }
   
- 
+.form-group {
+    font-family: Gotham, Helvetica, Sans-Serif;
+    color:#000000;
+    font-size: 12px;
+    text-transform:uppercase;
+} 
+
+.form-control, {
+    font-family: Gotham, Helvetica, Sans-Serif;
+    
+}
+
 h1, h2 /*This controls all listed headings. (h1, h2, h3...etc)*/
 { 
-    font-family: Duke, Mensch, Sans-Serif;
-    color:#aed2a2;
-    font-size: 50px;
+    font-family: Gotham, Helvetica, Sans-Serif;
+    color:#cc6633;
+    font-size: 20px;
     text-transform:uppercase;
-   
+  
 }
  
 p /*This controls all body text*/
